@@ -1,8 +1,10 @@
 function mostRepeatedLetter(str) {
   const charMap = {};
   let max = 0;
-  let maxChar = "";
-
+  let mostRepeated = "";
+	// lowercasing the string and removing spaces, for the requested output this is the way
+	str = str.toLowerCase();
+	str = str.split(' ').join('');
 
   // create character map
   for (let char of str) {
@@ -14,16 +16,14 @@ function mostRepeatedLetter(str) {
       charMap[char] = 1;
     }
   }
-
   // find the most commonly used character
   for (let char in charMap) {
     if (charMap[char] > max) {
       max = charMap[char];
-      maxChar = char;
+      mostRepeated = char;
     }
   }
-console.log(charMap)
-  return maxChar;
+  return mostRepeated;
 }
 
 
