@@ -1,5 +1,8 @@
 const test = [83, 47, 99, 73, 400, 12, 83];
 const test2 = [1, 6, 4];
+
+
+
 // function logger (arr) {
 // 	let hash = {};
 // 	for (let key in arr) {
@@ -9,7 +12,7 @@ const test2 = [1, 6, 4];
 // };
 
 // logger(test);
-const spreadTest = function (x, y ,z) {
-return x*y*z;
-}
-console.log(spreadTest(...test2));
+// const spreadTest = function (x, y ,z) {
+// return x*y*z;
+// }
+// console.log(spreadTest(...test2));
