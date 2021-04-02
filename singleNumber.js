@@ -2,12 +2,14 @@ var singleNumber = function (nums) {
   const hash = {};
 	nums.forEach((num) => {
 		if (hash[num]) {
+			console.log(hash)
 			delete hash[num]
+						console.log(hash);
+
 		} else {
 			hash[num] = 1;
 		}
 	});
-	console.log(Object.keys(hash)[0]);
 	return Object.keys(hash)[0];
 };
 
