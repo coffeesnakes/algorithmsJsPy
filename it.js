@@ -1,5 +1,5 @@
-const test = [83, 47, 99, 73, 400, 12, 83];
-const test2 = [1, 6, 4];
+let test = [83, 47, 99, 73, 400, 12, 83];
+let test2 = [1, 6, 4];
 
 
 
@@ -16,3 +16,6 @@ const test2 = [1, 6, 4];
 // return x*y*z;
 // }
 // console.log(spreadTest(...test2));
+console.log(test, test.length);
+test.splice(2, 3);
+console.log(test, test.length);
