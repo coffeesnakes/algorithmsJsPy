@@ -16,6 +16,13 @@ let test2 = [1, 6, 4];
 // return x*y*z;
 // }
 // console.log(spreadTest(...test2));
-console.log(test, test.length);
-test.splice(2, 3);
-console.log(test, test.length);
+// console.log(test, test.length);
+// test.splice(2, 3);
+// console.log(test, test.length);
+
+function findMax (arr) {
+	return Math.max(null, ...arr);
+
+};
+console.log(findMax(test));
+console.log(findMax(test2))
