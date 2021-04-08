@@ -22,6 +22,7 @@ class Toggle extends React.Component {
       <button onClick={this.handleClick}>
         {this.state.clicked ? "ON" : "OFF"}
       </button>
+      // <button onclick="history.back()">Go Back</button>
     );
   }
 }
