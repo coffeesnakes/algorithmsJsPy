@@ -20,6 +20,7 @@
 //  console.log(winner)
 //   return winner;
 // }
+
 const HOME_TEAM_WON = 1;
 
 function tournamentWinner(competitions, results) {
@@ -31,6 +32,7 @@ function tournamentWinner(competitions, results) {
     const winningTeam = result === HOME_TEAM_WON ? homeTeam : awayTeam;
     const currentScore = scores.get(winningTeam) || 0;
     scores.set(winningTeam, currentScore + 3);
+    console.log(scores);
   }
 
   let currentBestScore = 0;
@@ -42,7 +44,7 @@ function tournamentWinner(competitions, results) {
     }
   });
 
-	console.log(currentBestTeam)
+  console.log(currentBestTeam);
   return currentBestTeam;
 }
 
