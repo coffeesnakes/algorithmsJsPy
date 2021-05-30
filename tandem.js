@@ -15,3 +15,4 @@ function tandemBicycle(redShirtSpeeds, blueShirtSpeeds, fastest) {
 
   return totalSpeed;
 }
+
