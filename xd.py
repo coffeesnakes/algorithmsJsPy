@@ -14,3 +14,17 @@ def threesum(nums, target):
                     # these are the indices
                     return [i, j, k]
     return None
+
+
+# This is the main function
+# It is called when the script is run
+# It is not called when the script is imported
+if __name__ == '__main__':
+    # I want to counterstrike data from an api
+
+    # I want to get the data from the api
+    # I want to parse the data
+
+    def get_data():
+
+        return data
